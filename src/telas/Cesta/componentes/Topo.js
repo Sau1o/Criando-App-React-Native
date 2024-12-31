@@ -7,11 +7,11 @@ import topo from '../../../../assets/topo.png';
 
 const width = Dimensions.get('screen').width;
 
-const Topo = () => {
+const Topo = ({titulo}) => {
     return(
         <>
             <Image style={estilos.topo} source={topo} />
-            <Texto style={estilos.titulo}>Detalhe da cesta</Texto>
+            <Texto style={estilos.titulo}>{titulo}</Texto>
         </>
     )
 }

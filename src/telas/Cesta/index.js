@@ -6,12 +6,12 @@ import Detalhes from './componentes/Detalhes';
 
 import estilos from './estilos';
 
-const Cesta = () => {
+const Cesta = ({topo, detalhes}) => {
   return(
     <>
-        <Topo />
+        <Topo {...topo}/>
         <View style={estilos.cesta}>
-          <Detalhes />        
+          <Detalhes {...detalhes}/>        
       </View>
     </>
   )
