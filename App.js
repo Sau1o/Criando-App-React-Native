@@ -1,4 +1,5 @@
 import { StatusBar, SafeAreaView, View } from 'react-native';
+import AppLoading from 'expo-app-loading';
 import Cesta from './src/telas/Cesta';
 
 import mock from './src/mocks/cesta';
@@ -16,7 +17,7 @@ const App = () => {
   });
 
   if(!fontCarregada) {
-    return <View />
+    return <AppLoading />
   }
 
   return (
